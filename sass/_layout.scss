@@ -4,9 +4,24 @@ a {
   color: inherit !important;
 }
 
+a {
+  text-decoration: none !important;
+}
+
 .container {
   width: 1170px !important;
 }
+
+.btn {
+  width: fit-content !important;
+  text-transform: uppercase !important;
+
+  & span {
+    font-weight: 500 !important;
+  }
+}
+
+//////////// Navigation ////////////
 
 .navbar {
   padding: 2.1rem !important;
@@ -36,4 +51,74 @@ a {
 
 .logo {
   max-width: 100px;
+}
+
+//////////// Carousel ////////////
+
+.carousel {
+  position: relative;
+
+  &_social-icons {
+    position: absolute;
+    top: 20px;
+    right: $custom-position;
+
+    z-index: 5;
+
+    & i {
+      background-color: $black;
+      padding: 0.3rem;
+      border-radius: 50%;
+      color: $white;
+    }
+
+    & i:hover {
+      background-color: $custom-primary;
+    }
+  }
+}
+
+.slide {
+  min-height: $h-min;
+  background-size: cover;
+
+  &_content {
+    height: $h-min;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  & h1,
+  p {
+    width: fit-content;
+    background-color: $custom-opacity-700;
+    padding: 0.5rem 1.5rem;
+
+    text-transform: capitalize;
+  }
+}
+
+.owl-nav {
+  position: absolute;
+  bottom: 0;
+  right: $custom-position;
+  //   font-size: 6rem;
+  color: $white;
+  font-size: 5rem;
+
+  display: flex;
+  gap: 1rem;
+
+  & button {
+    margin: 0 !important;
+  }
+
+  & button:hover {
+    background-color: transparent !important;
+  }
+
+  & button:focus {
+    outline: none !important;
+  }
 }
