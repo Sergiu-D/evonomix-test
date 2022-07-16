@@ -16,10 +16,10 @@ section .container {
     font-weight: 300; }
   section .container > i {
     font-size: 3rem; }
-  section .container > h1 {
+  section .container h1 {
     text-transform: uppercase;
     font-weight: 400; }
-    section .container > h1 span {
+    section .container h1 span {
       font-weight: 500; }
 
 .btn {
@@ -113,6 +113,32 @@ section .container {
     transform: rotateZ(0deg); }
   to {
     transform: rotateZ(360deg); } }
+.packages {
+  position: relative;
+  background: url("../img/video-image.png");
+  background-attachment: fixed; }
+  .packages .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5); }
+  .packages_container {
+    position: relative;
+    z-index: 10; }
+  .packages_play {
+    width: fit-content;
+    margin: 0 auto;
+    cursor: pointer; }
+    .packages_play i {
+      font-size: 5rem; }
+      .packages_play i::before {
+        transition: all 0.2s ease-in-out; }
+    .packages_play:hover i::before {
+      transform: scale(1.1); }
+
+.modal-body iframe {
+  width: 100%;
+  aspect-ratio: 16/9; }
+
 /*!
  * Bootstrap v4.0.0 (https://getbootstrap.com)
  * Copyright 2011-2018 The Bootstrap Authors
