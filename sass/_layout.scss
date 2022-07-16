@@ -32,16 +32,36 @@ section .container {
   text-transform: uppercase !important;
   border: none !important;
 
+  &:active {
+    outline: none !important;
+  }
   & span {
     font-weight: 500 !important;
   }
 }
 
-.btn-custom-primary:hover {
-  background-color: $custom-secondary !important;
+.btn-custom-primary {
+  &:active {
+    outline: none !important;
+  }
+  &:focus {
+    box-shadow: none !important;
+  }
+  &:hover {
+    background-color: $custom-secondary !important;
+  }
 }
-.btn-custom-secondary:hover {
-  background-color: $custom-primary !important;
+
+.btn-custom-secondary {
+  &:active {
+    outline: none !important;
+  }
+  &:focus {
+    box-shadow: none !important;
+  }
+  &:hover {
+    background-color: $custom-primary !important;
+  }
 }
 
 //////////// Navigation ////////////
@@ -272,6 +292,7 @@ section .container {
       border: 1px solid $white;
       background-color: transparent;
       padding: 0.5rem;
+      color: $white;
 
       &::placeholder {
         color: $white;

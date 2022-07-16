@@ -16,7 +16,7 @@ const slides = [
     description:
       "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident",
     buttonText: "Detalii",
-    buttonLink: "/detalii",
+    buttonLink: "#oferta_saptamanii",
     background: {
       backgroundImage: "./img/slider-image-1.png",
       backgroundColor: "#444",
@@ -25,7 +25,7 @@ const slides = [
   {
     title: "oferta zilei",
     buttonText: "Detalii",
-    buttonLink: "/detalii",
+    buttonLink: "#oferta_zilei",
     background: {
       backgroundColor: "orangered",
     },
@@ -33,16 +33,15 @@ const slides = [
   {
     description: "lorem ipsum sdfsfd ddgsgdsf",
     buttonText: "Detalii",
-    buttonLink: "/detalii",
+    buttonLink: "#detalii",
     background: {
-      //   backgroundImage: "/img",
       backgroundColor: "blueviolet",
     },
   },
   {
     title: "oferta anului",
     description: "lorem ipsum sdfsfd ddgsgdsf",
-    buttonLink: "/detalii",
+    buttonLink: "#oferta_anului",
     background: {
       backgroundColor: "blueviolet",
     },
