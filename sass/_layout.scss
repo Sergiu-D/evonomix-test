@@ -180,7 +180,8 @@ section .container {
 // Packages
 .packages {
   position: relative;
-  background: url("../img/video-image.png");
+  background: url("../img/video-image.png") no-repeat;
+  background-size: cover;
   background-attachment: fixed;
 
   .overlay {
@@ -216,5 +217,35 @@ section .container {
   iframe {
     width: 100%;
     aspect-ratio: 16/9;
+  }
+}
+
+// Articles
+.articles {
+  img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  &_header {
+    i {
+      font-size: 2rem;
+    }
+  }
+
+  &_content {
+    margin-left: 2rem;
+    text-align: left;
+
+    h2 {
+      text-transform: uppercase;
+    }
+    p,
+    a {
+      text-transform: capitalize;
+    }
+    a {
+      text-decoration: underline !important;
+    }
   }
 }

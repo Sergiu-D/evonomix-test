@@ -115,7 +115,8 @@ section .container {
     transform: rotateZ(360deg); } }
 .packages {
   position: relative;
-  background: url("../img/video-image.png");
+  background: url("../img/video-image.png") no-repeat;
+  background-size: cover;
   background-attachment: fixed; }
   .packages .overlay {
     position: absolute;
@@ -138,6 +139,23 @@ section .container {
 .modal-body iframe {
   width: 100%;
   aspect-ratio: 16/9; }
+
+.articles img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; }
+.articles_header i {
+  font-size: 2rem; }
+.articles_content {
+  margin-left: 2rem;
+  text-align: left; }
+  .articles_content h2 {
+    text-transform: uppercase; }
+  .articles_content p,
+  .articles_content a {
+    text-transform: capitalize; }
+  .articles_content a {
+    text-decoration: underline !important; }
 
 /*!
  * Bootstrap v4.0.0 (https://getbootstrap.com)
