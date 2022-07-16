@@ -8,11 +8,6 @@ a {
   text-decoration: none !important;
 }
 
-section .container,
-.container {
-  width: 1170px !important;
-}
-
 section .container {
   min-height: $h-min;
 
@@ -35,10 +30,18 @@ section .container {
 .btn {
   width: fit-content !important;
   text-transform: uppercase !important;
+  border: none !important;
 
   & span {
     font-weight: 500 !important;
   }
+}
+
+.btn-custom-primary:hover {
+  background-color: $custom-secondary !important;
+}
+.btn-custom-secondary:hover {
+  background-color: $custom-primary !important;
 }
 
 //////////// Navigation ////////////
@@ -246,6 +249,85 @@ section .container {
     }
     a {
       text-decoration: underline !important;
+    }
+  }
+}
+
+// Newsletter
+.newsletter {
+  background: url("../img/clouds-img.png") no-repeat;
+  background-size: cover;
+
+  &_form {
+    label {
+      display: block;
+      text-align: left;
+      text-transform: capitalize;
+      font-weight: 500;
+    }
+
+    input {
+      width: 100%;
+      display: block;
+      border: 1px solid $white;
+      background-color: transparent;
+      padding: 0.5rem;
+
+      &::placeholder {
+        color: $white;
+      }
+
+      &:focus {
+        outline: 2px solid $white;
+      }
+    }
+    a {
+      margin: 2rem 0;
+    }
+  }
+}
+
+// Footer
+.footer {
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+
+    margin: 2rem 0;
+
+    li {
+      list-style: none;
+    }
+
+    a {
+      text-transform: capitalize;
+    }
+
+    a:hover {
+      color: $custom-primary !important;
+    }
+  }
+
+  &_credits {
+    background-color: $custom-secondary;
+    p {
+      text-transform: capitalize;
+      text-align: right;
+      color: $white;
+      font-weight: 300;
+
+      padding: 1rem 0;
+      margin: 0;
+
+      img {
+        width: 20px;
+      }
+
+      span {
+        font-weight: 500;
+      }
     }
   }
 }

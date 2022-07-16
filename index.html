@@ -169,6 +169,7 @@
         </section>
         <!-- packages section end -->
 
+        <!-- articles section start -->
         <section class="articles p-5">
 
             <div class="container d-flex flex-column text-center">
@@ -177,7 +178,7 @@
                     <h1>noutati & <span>articole</span></h1>
                 </div>
                 <div class="row mb-5 mt-5">
-                    <article class="col d-flex ml-5">
+                    <article class="col-lg-6 d-flex my-4">
                         <img src="./img/article-image.png" alt="people in vacation">
                         <div class="articles_content">
                             <h2>lorem ipsum dolor</h2>
@@ -187,7 +188,30 @@
                             <a href="#" class="text-custom-primary">citeste mai mult >></a>
                         </div>
                     </article>
-                    <article class="col d-flex">
+                    <article class="col-lg-6 d-flex my-4">
+                        <img src="./img/article-image.png" alt="people in vacation">
+                        <div class="articles_content">
+                            <h2>lorem ipsum dolor</h2>
+                            <p>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna,
+                                lorem ipsum dolor est sit amet.</p>
+                            <a href="#" class="text-custom-primary">citeste mai mult >></a>
+                        </div>
+                    </article>
+
+                    <div class="col-12 dropdown-divider mb-5"></div>
+
+                    <article class="col-lg-6 d-flex my-4">
+                        <img src="./img/article-image.png" alt="people in vacation">
+                        <div class="articles_content">
+                            <h2>lorem ipsum dolor</h2>
+                            <p>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna,
+                                lorem ipsum dolor est sit amet.</p>
+                            <a href="#" class="text-custom-primary">citeste mai mult >></a>
+                        </div>
+                    </article>
+                    <article class="col-lg-6 d-flex my-4">
                         <img src="./img/article-image.png" alt="people in vacation">
                         <div class="articles_content">
                             <h2>lorem ipsum dolor</h2>
@@ -198,38 +222,75 @@
                         </div>
                     </article>
                 </div>
-                <div class="dropdown-divider mb-5"></div>
-                <div class="row mb-5">
-                    <article class="col d-flex ml-5">
-                        <img src="./img/article-image.png" alt="people in vacation">
-                        <div class="articles_content">
-                            <h2>lorem ipsum dolor</h2>
-                            <p>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna,
-                                lorem ipsum dolor est sit amet.</p>
-                            <a href="#" class="text-custom-primary">citeste mai mult >></a>
-                        </div>
-                    </article>
-                    <article class="col d-flex">
-                        <img src="./img/article-image.png" alt="people in vacation">
-                        <div class="articles_content">
-                            <h2>lorem ipsum dolor</h2>
-                            <p>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna,
-                                lorem ipsum dolor est sit amet.</p>
-                            <a href="#" class="text-custom-primary">citeste mai mult >></a>
-                        </div>
-                    </article>
-                </div>
+
 
                 <a href="#" class="btn btn-custom-secondary text-white m-auto">vezi toate noutatile</a>
             </div>
+        </section>
+        <!-- articles section end -->
 
+
+        <!-- newsletter section start -->
+        <section class="newsletter p-5">
+            <div class="container d-flex flex-column justify-content-between text-center text-white">
+                <i class="icon-mail"></i>
+                <div class="newsletter_header m-xl-5">
+                    <h1>alerta <span>de vacanta</span></h1>
+                    <br>
+                    Pellentesque tincidunt id nisl non molestie.</br>
+                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                    </p>
+                </div>
+                <form class="newsletter_form m-xl-5">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-xl-3 my-4">
+
+                            <label for="destination">destinatia dorita</label>
+                            <input type="text" id="destination" name="destination" placeholder="turism intern" required>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-xl-3 my-4">
+                            <label for="budget">buget maxim</label>
+                            <input type="number" id="budget" name="budget" placeholder="turism intern" required>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-xl-3 my-4">
+                            <label for="full_name">nume si prenume</label>
+                            <input type="text" id="full_name" name="full_name" placeholder="turism intern" required>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-xl-3 my-4">
+                            <label for="email">e-mail</label>
+                            <input type="email" id="email" name="email" placeholder="turism intern" required>
+                        </div>
+                    </div>
+                    <a href="#" type="submit" class="btn btn-custom-primary text-white">creaza
+                        <span>alerta</span></a>
+                </form>
+            </div>
 
         </section>
-        <section></section>
+
+        <!-- newsletter section end -->
     </main>
-    <footer></footer>
+    <footer class="footer">
+        <div class="container">
+            <ul>
+                <li><a href="#">acasa</a></li>
+                <li><a href="#">turism intern</a></li>
+                <li><a href="#">turism extern</a></li>
+                <li><a href="#">oferte speciale</a></li>
+                <li><a href="#">bilte avion</a></li>
+                <li><a href="#">contact</a></li>
+                <li><a href="#">termani si consitii</a></li>
+                <li><a href="#">politica de confidentialitate</a></li>
+            </ul>
+        </div>
+        <div class="footer_credits">
+            <div class="container">
+                <p>
+                    developed with <img src="./img/hearth.png" alt="hearth"> <span>by EVONOMIX</span>
+                </p>
+            </div>
+        </div>
+    </footer>
 
     <!-- Modal -->
     <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-hidden="true">

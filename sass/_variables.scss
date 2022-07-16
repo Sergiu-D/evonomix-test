@@ -4,6 +4,7 @@ $btn-border-radius: 0;
 
 // colors
 $custom-primary: #ed1c24;
+$custom-secondary: #000;
 $custom-opacity-700: rgba(0, 0, 0, 0.7);
 $custom-opacity-500: rgba(0, 0, 0, 0.5);
 
@@ -18,7 +19,7 @@ $icons-size: 3rem;
 
 $custom-theme-colors: (
   "custom-primary": $custom-primary,
-  "custom-secondary": #000,
+  "custom-secondary": $custom-secondary,
 
   "cl-light": #f6f6f6,
 );

@@ -1,3 +1,31 @@
+@media (min-width: 1200px) {
+  section .container,
+  .container {
+    width: 1170px !important; } }
+@media (max-width: 1000px) {
+  .articles article {
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
+@media (max-width: 770px) {
+  #offers_mountain-icon {
+    width: 400px;
+    bottom: -75px !important; }
+
+  .carousel_social-icons {
+    left: 50% !important;
+    transform: translateX(-50%); }
+
+  .slide_content {
+    align-items: center; }
+
+  .owl-nav {
+    right: 50% !important;
+    transform: translateX(-50%); } }
+@media (max-width: 517px) {
+  .articles article {
+    flex-direction: column;
+    align-items: center; } }
 h1,
 h2,
 a {
@@ -5,10 +33,6 @@ a {
 
 a {
   text-decoration: none !important; }
-
-section .container,
-.container {
-  width: 1170px !important; }
 
 section .container {
   min-height: 40vh; }
@@ -24,9 +48,16 @@ section .container {
 
 .btn {
   width: fit-content !important;
-  text-transform: uppercase !important; }
+  text-transform: uppercase !important;
+  border: none !important; }
   .btn span {
     font-weight: 500 !important; }
+
+.btn-custom-primary:hover {
+  background-color: #000 !important; }
+
+.btn-custom-secondary:hover {
+  background-color: #ed1c24 !important; }
 
 .navbar {
   padding: 2.1rem !important; }
@@ -156,6 +187,53 @@ section .container {
     text-transform: capitalize; }
   .articles_content a {
     text-decoration: underline !important; }
+
+.newsletter {
+  background: url("../img/clouds-img.png") no-repeat;
+  background-size: cover; }
+  .newsletter_form label {
+    display: block;
+    text-align: left;
+    text-transform: capitalize;
+    font-weight: 500; }
+  .newsletter_form input {
+    width: 100%;
+    display: block;
+    border: 1px solid #fff;
+    background-color: transparent;
+    padding: 0.5rem; }
+    .newsletter_form input::placeholder {
+      color: #fff; }
+    .newsletter_form input:focus {
+      outline: 2px solid #fff; }
+  .newsletter_form a {
+    margin: 2rem 0; }
+
+.footer ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin: 2rem 0; }
+  .footer ul li {
+    list-style: none; }
+  .footer ul a {
+    text-transform: capitalize; }
+  .footer ul a:hover {
+    color: #ed1c24 !important; }
+.footer_credits {
+  background-color: #000; }
+  .footer_credits p {
+    text-transform: capitalize;
+    text-align: right;
+    color: #fff;
+    font-weight: 300;
+    padding: 1rem 0;
+    margin: 0; }
+    .footer_credits p img {
+      width: 20px; }
+    .footer_credits p span {
+      font-weight: 500; }
 
 /*!
  * Bootstrap v4.0.0 (https://getbootstrap.com)
