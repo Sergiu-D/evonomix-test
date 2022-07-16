@@ -1,0 +1,10 @@
+# Getting Started
+
+In the project directory, you can run:
+
+### `npm install`
+
+Install the [Watch Sass](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass) compiler or [Koala](http://koala-app.com/).
+
+Runs the app in the development mode.
+Open http://localhost:3000 to view it in the browser.
