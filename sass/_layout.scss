@@ -15,6 +15,21 @@ section .container,
 
 section .container {
   min-height: $h-min;
+
+  p {
+    font-weight: 300;
+  }
+  & > i {
+    font-size: $icons-size;
+  }
+  & > h1 {
+    text-transform: uppercase;
+    font-weight: 400;
+
+    span {
+      font-weight: 500;
+    }
+  }
 }
 
 .btn {
@@ -141,14 +156,23 @@ section .container {
     z-index: 5;
   }
 
-  &_container {
-    i {
-      font-size: $icons-size;
-    }
-  }
-
   & a {
     position: relative;
     z-index: 10;
+  }
+}
+
+// Make offer
+.make-offer {
+  &_gear-icon::before {
+    animation: gearIconAnimation 5s infinite linear !important;
+  }
+}
+@keyframes gearIconAnimation {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
   }
 }

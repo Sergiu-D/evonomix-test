@@ -12,6 +12,15 @@ section .container,
 
 section .container {
   min-height: 40vh; }
+  section .container p {
+    font-weight: 300; }
+  section .container > i {
+    font-size: 3rem; }
+  section .container > h1 {
+    text-transform: uppercase;
+    font-weight: 400; }
+    section .container > h1 span {
+      font-weight: 500; }
 
 .btn {
   width: fit-content !important;
@@ -92,12 +101,18 @@ section .container {
     left: 50%;
     transform: translateX(-50%);
     z-index: 5; }
-  .offers_container i {
-    font-size: 3rem; }
   .offers a {
     position: relative;
     z-index: 10; }
 
+.make-offer_gear-icon::before {
+  animation: gearIconAnimation 5s infinite linear !important; }
+
+@keyframes gearIconAnimation {
+  from {
+    transform: rotateZ(0deg); }
+  to {
+    transform: rotateZ(360deg); } }
 /*!
  * Bootstrap v4.0.0 (https://getbootstrap.com)
  * Copyright 2011-2018 The Bootstrap Authors
