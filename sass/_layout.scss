@@ -8,8 +8,13 @@ a {
   text-decoration: none !important;
 }
 
+section .container,
 .container {
   width: 1170px !important;
+}
+
+section .container {
+  min-height: $h-min;
 }
 
 .btn {
@@ -120,5 +125,30 @@ a {
 
   & button:focus {
     outline: none !important;
+  }
+}
+
+// Offers section
+
+.offers {
+  position: relative;
+
+  #offers_mountain-icon {
+    position: absolute;
+    bottom: -48px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+  }
+
+  &_container {
+    i {
+      font-size: $icons-size;
+    }
+  }
+
+  & a {
+    position: relative;
+    z-index: 10;
   }
 }

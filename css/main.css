@@ -6,8 +6,12 @@ a {
 a {
   text-decoration: none !important; }
 
+section .container,
 .container {
   width: 1170px !important; }
+
+section .container {
+  min-height: 40vh; }
 
 .btn {
   width: fit-content !important;
@@ -79,6 +83,20 @@ a {
     background-color: transparent !important; }
   .owl-nav button:focus {
     outline: none !important; }
+
+.offers {
+  position: relative; }
+  .offers #offers_mountain-icon {
+    position: absolute;
+    bottom: -48px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5; }
+  .offers_container i {
+    font-size: 3rem; }
+  .offers a {
+    position: relative;
+    z-index: 10; }
 
 /*!
  * Bootstrap v4.0.0 (https://getbootstrap.com)
