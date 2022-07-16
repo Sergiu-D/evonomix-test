@@ -1,0 +1,39 @@
+h1,
+h2,
+a {
+  color: inherit !important;
+}
+
+.container {
+  width: 1170px !important;
+}
+
+.navbar {
+  padding: 2.1rem !important;
+}
+
+.navbar-nav {
+  & .nav-link {
+    text-transform: uppercase !important;
+    font-weight: 500 !important;
+  }
+  & .nav-link:hover {
+    color: $custom-primary !important;
+  }
+}
+
+.dropdown-menu {
+  border: none !important;
+  border-radius: 0 !important;
+
+  & .dropdown-item {
+    text-transform: capitalize !important;
+  }
+  & .dropdown-item:hover {
+    color: $custom-primary !important;
+  }
+}
+
+.logo {
+  max-width: 100px;
+}

@@ -1,0 +1,14 @@
+$btn-padding-y: 0.5rem;
+$btn-padding-x: 3rem;
+$btn-border-radius: 0;
+
+$custom-primary: #ed1c24;
+
+$custom-theme-colors: (
+  "custom-primary": $custom-primary,
+  "custom-secondary": #000,
+
+  "cl-light": #f6f6f6,
+);
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
